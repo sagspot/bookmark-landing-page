@@ -1,0 +1,28 @@
+/* 
+Body Copy
+Font size: 18px
+Fonts
+Family: Rubik
+Weights: 400, 500
+Icons
+For the icons in the design, you can choose between using the icons provided or an font icon library.
+
+Some library suggestions can be found below:
+
+[Font Awesome](https://fontawesome.com)
+[IcoMoon](https://icomoon.io)
+[Ionicons](https://ionicons.com)
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125rem;
+}
+/*# sourceMappingURL=style.css.map */
