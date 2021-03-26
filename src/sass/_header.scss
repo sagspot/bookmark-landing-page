@@ -1,0 +1,179 @@
+.nav {
+  > * {
+    position: relative;
+    z-index: 1000;
+  }
+  flex-direction: column;
+  @include tablet-landscape-up {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-brand {
+    margin-bottom: rem(32);
+  }
+
+  .hamburger {
+    cursor: pointer;
+    @include tablet-landscape-up {
+      display: none;
+    }
+
+    &-btn {
+      display: block;
+      position: relative;
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        top: rem(-6);
+      }
+      &::after {
+        top: rem(6);
+      }
+    }
+    &-btn,
+    &-btn::before,
+    &-btn::after {
+      display: block;
+      width: rem(20);
+      height: rem(4);
+      background: $very-dark-blue;
+
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &-list {
+    position: absolute;
+    height: auto;
+    @include tablet-landscape-up {
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+      display: block;
+      visibility: hidden;
+      width: 80%;
+      padding: rem(24);
+      margin-left: auto;
+      margin-right: auto;
+      font-size: rem(14);
+      border-top: 1px solid rgba($color: $grayish-blue, $alpha: 0.6);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      @include tablet-landscape-up {
+        display: flex;
+        visibility: visible;
+        border: unset;
+        padding: 0 rem(32);
+        color: $very-dark-blue;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $soft-red;
+        }
+      }
+    }
+  }
+  &-cta {
+    display: block;
+    padding: rem(16);
+    border-radius: rem(6);
+    border: 2px solid $white;
+    font-weight: 500;
+    @include tablet-landscape-up {
+      padding: rem(12) rem(40);
+      color: $white;
+      background: $soft-red;
+      border: 2px solid $soft-red;
+      transition: all 0.2s ease;
+      &:hover {
+        color: $soft-red;
+        background: $white;
+      }
+    }
+  }
+
+  &-social {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+
+  .modal {
+    position: fixed;
+    visibility: hidden;
+    transform: scale(0);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: top;
+    transition: transform 0.2s ease;
+    background: rgba($color: $very-dark-blue, $alpha: 0.8);
+    z-index: 900;
+  }
+
+  &.open {
+    .nav-brand svg {
+      g {
+        path {
+          fill: $white;
+        }
+        > g path {
+          fill: $very-dark-blue;
+        }
+      }
+      circle {
+        fill: $white;
+      }
+    }
+
+    .hamburger-btn {
+      transform: rotate(45deg);
+      background: $white;
+
+      &::before {
+        transform: rotate(-90deg);
+        top: 0;
+        background: $white;
+      }
+      &::after {
+        opacity: 0;
+        transform: rotate(45deg);
+      }
+    }
+
+    .nav-list a {
+      //   display: block;
+      animation: 2s fade;
+      visibility: visible;
+      &:nth-of-type(2) {
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 1s;
+      }
+      &:last-of-type {
+        animation-delay: 1.5s;
+      }
+    }
+
+    .modal {
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
