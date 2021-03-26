@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 
-![Design preview for the Bookmark landing page coding challenge](./images/desktop-preview.jpg)
+![Design preview for the Bookmark landing page coding challenge](./src/images/desktop-preview.jpg)
 
 **To do this challenge, basic understanding of HTML, CSS and JavaScript are needed.**
 
