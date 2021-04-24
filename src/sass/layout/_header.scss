@@ -1,0 +1,186 @@
+header {
+  height: 0;
+}
+.nav {
+  > * {
+    position: relative;
+    z-index: 1000;
+  }
+
+  @include tablet-landscape-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 0;
+    padding: 2rem;
+    background: transparent;
+    transition: background 0.3s ease-out, height 0.3s ease-out;
+
+    &-list,
+    &-social {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-20%);
+      transition: visibility 0.3s ease-out, opacity 0.3s ease-out,
+        transform 0.3s ease-out;
+    }
+
+    &.open {
+      background: rgba($color: $very-dark-blue, $alpha: 0.8);
+      height: 100%;
+
+      .nav {
+        &-brand svg {
+          g {
+            path {
+              fill: $white;
+            }
+            > g path {
+              fill: $very-dark-blue;
+            }
+          }
+          circle {
+            fill: $white;
+          }
+        }
+
+        &-list,
+        &-social {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hamburger-btn {
+        transform: rotate(45deg);
+        background: $white;
+
+        &::before {
+          transform: rotate(-90deg);
+          top: 0;
+          background: $white;
+        }
+        &::after {
+          opacity: 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  @include tablet-landscape-up {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-brand {
+    margin-bottom: rem(32);
+    position: relative;
+    @include tablet-landscape-up {
+      margin-bottom: unset;
+    }
+  }
+
+  .hamburger {
+    cursor: pointer;
+    padding: rem(8) 0;
+    @include tablet-landscape-up {
+      display: none;
+    }
+
+    &-btn {
+      display: block;
+      position: relative;
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        top: rem(-6);
+      }
+      &::after {
+        top: rem(6);
+      }
+    }
+    &-btn,
+    &-btn::before,
+    &-btn::after {
+      display: block;
+      width: rem(20);
+      height: rem(4);
+      background: $very-dark-blue;
+
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &-list {
+    height: auto;
+    @include tablet-landscape-up {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+      display: block;
+      padding: rem(32) 0;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: rem(21);
+      border-top: 1px solid rgba($color: $grayish-blue, $alpha: 0.95);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      @include tablet-landscape-up {
+        display: flex;
+        visibility: visible;
+        font-size: rem(14);
+        border: unset;
+        padding: 0 rem(32);
+        color: $very-dark-blue;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $soft-red;
+        }
+      }
+    }
+  }
+  &-cta {
+    display: block;
+    padding: rem(16);
+    border-radius: rem(6);
+    border: 2px solid $white;
+    font-weight: 500;
+    @include tablet-landscape-up {
+      padding: rem(12) rem(40);
+      color: $white;
+      background: $soft-red;
+      border: 2px solid $soft-red;
+      transition: all 0.2s ease;
+      &:hover {
+        color: $soft-red;
+        background: $white;
+      }
+    }
+  }
+
+  &-social {
+    place-self: center;
+    margin-top: auto;
+    min-width: 6rem;
+    margin-bottom: 2rem;
+    @include tablet-landscape-up {
+      display: none;
+    }
+  }
+}
+
+// @keyframes height-close {
+//   0 {
+//     100
+//   }
+// }

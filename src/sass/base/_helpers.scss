@@ -1,0 +1,20 @@
+.container {
+  padding: 2rem;
+  @include tablet-landscape-up {
+    margin: auto;
+    max-width: rem(991);
+  }
+}
+
+.flex {
+  display: flex;
+}
+.fd-c {
+  flex-direction: column;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.ai-c {
+  align-items: center;
+}

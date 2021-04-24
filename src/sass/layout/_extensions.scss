@@ -1,0 +1,67 @@
+.extension {
+  text-align: center;
+  @include tablet-landscape-up {
+    padding-bottom: rem(80);
+  }
+  &__description {
+    max-width: 560px;
+    margin: auto;
+  }
+  &__card {
+    &s {
+      display: flex;
+      flex-direction: column;
+      max-width: 250px;
+      margin: auto;
+      @include tablet-landscape-up {
+        flex-direction: row;
+        max-width: 767px;
+      }
+    }
+
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 100%;
+    min-height: rem(250);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px rgba($color: $grayish-blue, $alpha: 0.2);
+    box-shadow: 1px 1px 8px rgba($color: $grayish-blue, $alpha: 1);
+
+    @include tablet-landscape-up {
+      margin-bottom: unset;
+    }
+
+    @include tablet-landscape-up {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &:nth-of-type(2) {
+        transform: translateY(20%);
+      }
+
+      &:last-of-type {
+        transform: translateY(40%);
+      }
+    }
+
+    &--title {
+      font-weight: 500;
+    }
+    &--version {
+      margin-bottom: 1rem;
+      font-size: rem(14);
+      color: $grayish-blue;
+    }
+    &--break {
+      width: 100%;
+      border-bottom: 3px dotted $grayish-blue;
+    }
+    &--btn {
+      width: 90%;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

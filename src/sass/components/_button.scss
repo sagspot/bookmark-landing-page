@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: rem(4);
+  font-size: rem(14);
+  font-weight: 500;
+  border: 2px solid $soft-blue;
+  color: $white;
+  background: $soft-blue;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $soft-blue;
+    background: $white;
+  }
+
+  &-sec {
+    border-color: transparent;
+    color: $very-dark-blue;
+    background: $white;
+    box-shadow: 1px 1px 8px rgba($color: $grayish-blue, $alpha: 0.5);
+
+    &:hover {
+      color: $very-dark-blue;
+      border-color: $very-dark-blue;
+      box-shadow: unset;
+    }
+  }
+}

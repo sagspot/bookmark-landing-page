@@ -1,0 +1,52 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.footer {
+  background: $very-dark-blue;
+  color: $white;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include tablet-landscape-up {
+      flex-direction: row;
+      padding: 1rem;
+    }
+  }
+  &__logo {
+    padding-bottom: 2rem;
+    @include tablet-landscape-up {
+      padding-bottom: unset;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    @include tablet-landscape-up {
+      flex-direction: row;
+    }
+    a {
+      padding-bottom: 1.5rem;
+      text-transform: uppercase;
+      @include tablet-landscape-up {
+        padding: unset;
+        margin: 0 2rem;
+      }
+    }
+  }
+  &__social {
+    width: rem(80);
+    margin: auto;
+    @include tablet-landscape-up {
+      margin: unset;
+      margin-left: auto;
+    }
+  }
+}

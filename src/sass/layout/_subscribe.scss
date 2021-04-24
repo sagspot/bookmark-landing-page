@@ -1,0 +1,101 @@
+.subscribe {
+  background: $soft-blue;
+
+  &__container {
+    text-align: center;
+
+    p {
+      text-transform: uppercase;
+      color: $white;
+    }
+    h2 {
+      color: $white;
+      max-width: rem(320);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    min-width: rem(200);
+    &--field {
+      position: relative;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      z-index: 10;
+    }
+    @include tablet-landscape-down {
+      width: 100%;
+      margin-right: unset;
+    }
+
+    &--error {
+      position: absolute;
+      top: 1.8rem;
+      width: 100%;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75em;
+      font-style: italic;
+      text-align: left;
+      color: $white;
+      background: $soft-red;
+      z-index: 9;
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      transform: translateY(20%);
+      transition: visibility 0.3s ease-out, opacity 0.3s ease-out,
+        height 0.3s ease-out, transform 0.3s ease-out;
+
+      .error & {
+        visibility: visible;
+        opacity: 1;
+        height: 70%;
+        transform: translateY(0);
+      }
+    }
+    @include tablet-landscape-down {
+      transition: margin 0.3s ease-out;
+      &.error {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .error-icon {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.3s ease-out, opacity 0.3s ease-out;
+      z-index: 20;
+
+      .error & {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__btn.btn {
+    border: 2px solid $soft-red;
+    background: $soft-red;
+    @include tablet-landscape-down {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}
+
+form {
+  justify-content: center;
+  @include tablet-landscape-down {
+    flex-direction: column;
+  }
+}

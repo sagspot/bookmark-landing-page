@@ -1,12 +1,24 @@
-# Frontend Mentor - Bookmark landing page
+# Frontend Mentor - Bookmark landing page solution
 
-![Design preview for the Bookmark landing page coding challenge](./src/images/desktop-preview.jpg)
+This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, basic understanding of HTML, CSS and JavaScript are needed.**
+## Table of contents
 
-## The challenge
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-The challenge is to build out this landing page and get it looking as close to the design as possible.
+## Overview
+
+### The challenge
 
 Users should be able to:
 
@@ -16,44 +28,76 @@ Users should be able to:
   - The input field is empty
   - The email address is not formatted correctly
 
-For this challenge:
+### Screenshot
 
-- Create the rounded blue background shape with code
-- Change the `fill` and `stroke` color of the SVGs at specific points (the challenge can be completed using the single `logo-bookmark.svg` file provided)
+![](./screenshot.jpg)
 
-## Where to find everything
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-The task is to build out the project to the designs provided. Both mobile and desktop versions of the designs have been provided.
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
-The designs are in JPG static format. This means to use the best judgment for styles such as `font-size`, `padding` and `margin`. This helps train the eye to perceive differences in spacings and sizes.
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-All required assets have been provided in the `/images` folder and are already optimized.
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
-There is also a `style-guide.md` file, which contains the information needed, such as color palette and fonts.
+### Links
 
-## Building the project
+- Solution URL: [https://github.com/sagspot/bookmark-landing-page](https://github.com/sagspot/bookmark-landing-page)
+- Live Site URL: [https://bookmark-landing-page-ivory.vercel.app](https://bookmark-landing-page-ivory.vercel.app)
 
-Below is the suggested workflow process.
+## My process
 
-1. Initialize the project as a public repository on [GitHub](https://github.com/). This makes it easier to share the code with the community if in need of some help.
-2. Configure the repository to publish the code to [Vercel](https://bit.ly/fem-vercel). This will also be useful if in need of some help during a challenge as the project URL can be shared.
-3. Look through the designs to start planning out how to tackle the project. This step is crucial to help think ahead for CSS classes to enable reusable styles.
-4. Before adding any styles, structure the content with HTML. Writing HTML first can help focus attention on creating well-structured content.
-5. Write out the base styles for the project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once the current section is satisfactorily complete..
+### Built with
 
-## Deploying the project
+- [React](https://reactjs.org/) - JS library
+- SCSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-1. [Sign up to Vercel](https://bit.ly/fem-vercel-signup) and go through the onboarding flow, ensuring GitHub account is connected by using their [Vercel for GitHub](https://vercel.com/docs/v2/git-integrations/vercel-for-github) integration.
-2. Connect the project to Vercel from the ["Import project" page](https://vercel.com/import), using the "From Git Repository" button and selecting the project to be deployed.
-3. Once connected, every `git push`, Vercel will create a new [deployment](https://vercel.com/docs/v2/platform/deployments) and the deployment URL will be shown on the [Dashboard](https://vercel.com/dashboard). An email will also be sent for each deployment with the URL.
+### What I learned
 
-## Sharing the solution
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-There are multiple places to share the solution:
+To see how you can add code snippets, see below:
 
-1. Submit it on the platform so that other users will see it. Here's our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248).
-2. Share the solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
-3. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor** including the repo and live URLs in the tweet. Frontend entor would love to take a look at the solution and help share it around.
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
 
-**Have fun building!** 🚀
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+
+```js
+const proudOfThisFunc = () => {
+  console.log("🎉");
+};
+```
+
+### Continued development
+
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+
+### Useful resources
+
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
+## Author
+
+- Website - [sagspot](https://www.sagspot.netlify.app)
+- Frontend Mentor - [@sagspot](https://www.frontendmentor.io/profile/sagspot)
+- Twitter - [@sagspot](https://www.twitter.com/sagspot)
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
