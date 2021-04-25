@@ -2,7 +2,6 @@ import React from 'react';
 import opera from '../images/logo-opera.svg';
 import chrome from '../images/logo-chrome.svg';
 import firefox from '../images/logo-firefox.svg';
-// import heroImg from '../images/illustration-hero.svg';
 
 const extensions = [
   {

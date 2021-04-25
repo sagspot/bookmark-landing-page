@@ -3,7 +3,7 @@ import simpleBookmarking from './feature-components/simpleBookmarking';
 import speedySearching from './feature-components/speedySearching';
 import easySharing from './feature-components/easySharing';
 
-const features = () => {
+const Features = () => {
   return (
     <section className="features">
       <div className="container">
@@ -22,4 +22,4 @@ const features = () => {
   );
 };
 
-export default features;
+export default Features;

@@ -1,10 +1,10 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Extensions from './components/Extensions';
-import FAQs from './components/FAQs';
-import Subscribe from './components/Subscribe';
-import Footer from './components/Footer';
+import Header from './Components/Header';
+import Hero from './Components/Hero';
+import Features from './Components/Features';
+import Extensions from './Components/Extensions';
+import FAQs from './Components/FAQs';
+import Subscribe from './Components/Subscribe';
+import Footer from './Components/Footer';
 import './sass/index.scss';
 
 function App() {
