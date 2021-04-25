@@ -49,7 +49,16 @@ const Extensions = () => {
                 <img src={img} alt={imgAlt} className="extension__card--img" />
                 <div className="extension__card--title">{title}</div>
                 <div className="extension__card--version">{version}</div>
-                <div className="extension__card--break"></div>
+                <div className="extension__card--break">
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill="#495DCF"
+                      fillOpacity=".2"
+                      fillRule="evenodd"
+                      d="M0 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm280 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-18 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-17 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm122 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-35 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-70 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM88 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM70 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM53 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM35 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM18 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                    />
+                  </svg>
+                </div>
                 <div className="extension__card--btn btn">Add & Install</div>
               </div>
             );
